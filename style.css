@@ -32,3 +32,6 @@ ul{
 .title, .genre, .note{
   text-align: right;
 }
+.movie{
+  background-color: gray;
+}
