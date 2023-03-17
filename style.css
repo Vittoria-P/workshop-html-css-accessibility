@@ -26,3 +26,9 @@ ul{
   display: flex;
   flex-wrap: wrap;
 }
+.available{
+  text-align: left;
+}
+.title, .genre, .note{
+  text-align: right;
+}
