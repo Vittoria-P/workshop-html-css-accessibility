@@ -1,0 +1,22 @@
+.banner{
+  display: flex;
+  justify-content: space-between;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+.welcome{
+  display: flex;
+  justify-content: flex-end;
+}
+.category{
+  display: flex;
+  align-items: center;
+}
+ul{
+  list-style-type: none;
+}
+.grid{
+  display: flex;
+}

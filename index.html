@@ -9,27 +9,31 @@
   </head>
   <body>
     <header>
-      <h1>Movie Rent</h1>
-      <!--Hamburger menu-->
-      <nav>
-        <ul>
-          <a href="./index.html"><li>Home</li></a>
-          <a href="./pages/allmovies.html"><li>Movies</li></a>
-          <a href="./pages/allseries.html"><li>Series</li></a>
-          <a href="#"><li>Contact</li></a>
-        </ul>
-      </nav>
-      <input type="search">
+      <div class="banner">
+        <h1>Movie Rent</h1>
+        <!--Hamburger menu-->
+        <nav>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./pages/allmovies.html"><li>Movies</li></a>
+            <a href="./pages/allseries.html"><li>Series</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <h2>Welcome to MovieRent</h2>
+      <h2 class="welcome">Welcome</h2>
+      <div class="center">
+        <input type="search">
+      </div>
       <ul>
         <li>
-          <div>
+          <div class="category">
             <h3>All Movies</h3>
             <a href="./pages/allmovies.html"><button>See all</button></a>
           </div>
-          <ul>
+          <ul class="grid">
             <!--Movies list-->
             <li>
               <a href="./pages/singlepage.html">
@@ -70,11 +74,11 @@
           </ul>
         </li>
         <li>
-          <div>
+          <div class="category">
             <h3>All Series</h3>
             <a href="./pages/allseries.html"><button>See all</button></a>
           </div>
-          <ul>
+          <ul class="grid">
             <!--Series list-->
             <li>
               <a href="./pages/singlepage.html">
@@ -116,7 +120,7 @@
         </li>
         <li>
           <h3>Best Renter</h3>
-          <ul>
+          <ul class="grid">
             <!--Mix of movies and series-->
             <li>
               <a href="./pages/singlepage.html">
@@ -160,19 +164,21 @@
       <!--RAJOUTER PAGINATION-->
     </main>
     <footer>
-      <h5>MovieRent</h5>
-      <ul>
-        <li>
-          <a href="#"><button>Instagram</button></a>
-        </li>
-        <li>
-          <a href="#"><button>Facebook</button></a>
-        </li>
-        <li>
-          <a href="#"><button>Twitter</button></a>
-        </li>
-      </ul>
-      <p>
+      <div class="banner">
+        <h5>MovieRent</h5>
+        <ul class="grid">
+          <li>
+            <a href="#"><button>Instagram</button></a>
+          </li>
+          <li>
+            <a href="#"><button>Facebook</button></a>
+          </li>
+          <li>
+            <a href="#"><button>Twitter</button></a>
+          </li>
+        </ul>
+      </div>
+      <p class="center">
         © 2023 MovieRent - <a href="#">Mentions légales</a> -
         <a href="#">CGV</a> - <a href="#"> Politique de confidentialité</a>
       </p>
