@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../style.css" rel="stylesheet">
     <title>MovieRent</title>
   </head>
   <body>
-    <header>
+    <header class="banner">
       <button><a href="../index.html">< Back</a></button>
       <nav>
         <!--Hamburger menu-->
@@ -20,12 +21,14 @@
       </nav>
     </header>
     <main>
-      <a href="#"><button>Rent</button></a>
-      <div>
-        <p>Stars</p>
-        <p>Genre</p>
-        <p>Date</p>
-        <p>Time</p>
+      <a href="#" class="welcome"><button>Rent</button></a>
+      <div class="banner">
+        <div class="grid">
+          <p>Stars</p>
+          <p>Genre</p>
+          <p>Date</p>
+          <p>Time</p>
+        </div>
         <p><button>Checklist</button></p>
       </div>
       <h3>Series / Movie Title</h3>
@@ -34,7 +37,7 @@
         <p>Paul Something</p>
       </div>
       <p>Lorem Ipsum blablabla</p>
-      <ul>
+      <ul class="grid">
         <li>
           <a href="#"><button>DVD</button></a>
         </li>
@@ -47,7 +50,7 @@
       </ul>
       <h4>Cast</h4>
       <hr />
-      <ul>
+      <ul class="grid">
         <li>
           <a href="#"><button>Image</button></a>
         </li>
@@ -66,7 +69,7 @@
       </ul>
       <h4>You may also like</h4>
       <hr />
-      <ul>
+      <ul class="grid">
         <!--Mix of movies and series-->
         <li>
           <a href="./singlepage.html">
@@ -106,7 +109,7 @@
         </li>
       </ul>
       <h5>Tags</h5>
-      <ul>
+      <ul class="grid">
         <li>
           <a href="#"><button>#</button></a>
         </li>
@@ -140,19 +143,21 @@
       </ul>
     </main>
     <footer>
-      <h5>MovieRent</h5>
-      <ul>
-        <li>
-          <a href="#"><button>Instagram</button></a>
-        </li>
-        <li>
-          <a href="#"><button>Facebook</button></a>
-        </li>
-        <li>
-          <a href="#"><button>Twitter</button></a>
-        </li>
-      </ul>
-      <p>
+      <div class="banner">
+        <h5>MovieRent</h5>
+        <ul class="grid">
+          <li>
+            <a href="#"><button>Instagram</button></a>
+          </li>
+          <li>
+            <a href="#"><button>Facebook</button></a>
+          </li>
+          <li>
+            <a href="#"><button>Twitter</button></a>
+          </li>
+        </ul>
+      </div>
+      <p class="center">
         © 2023 MovieRent - <a href="#">Mentions légales</a> -
         <a href="#">CGV</a> - <a href="#"> Politique de confidentialité</a>
       </p>
