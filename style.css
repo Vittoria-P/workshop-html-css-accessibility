@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 html{
   width: 425px;
   margin: auto;
+  font-family: 'Roboto', sans-serif;
 }
-
 .banner{
   display: flex;
   justify-content: space-between;
@@ -14,6 +16,11 @@ html{
 .welcome{
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 3em;
+  padding-top: 3em;
+  padding-right: 0.5em;
+  letter-spacing: 0.1em;
 }
 .category{
   display: flex;
@@ -34,4 +41,36 @@ ul{
 }
 .movie{
   background-color: gray;
+}
+h1, .hamburger{
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+a{
+  text-decoration: underline;
+}
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  font-style: italic;
+}
+nav.hamburger a{
+  margin-left: 0.75em;
+  text-transform: lowercase;
+}
+header{
+  height: 20em;
+  background-color: rgb(220,220,220);
+  padding: 1.5em;
+}
+.points{
+  display: flex;
+  justify-content: center;
+  margin-top: -1em;
+  letter-spacing: 0.25em;
+  font-size: 0.5em;
+  color: white;
 }
