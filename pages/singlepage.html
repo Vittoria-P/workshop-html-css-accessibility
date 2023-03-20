@@ -5,143 +5,193 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../style.css" rel="stylesheet">
-    <title>MovieRent</title>
+    <script src="https://kit.fontawesome.com/d74732e987.js" crossorigin="anonymous"></script>
+    <title>Movie Title</title>
   </head>
   <body>
-    <header class="banner">
-      <button role="link" onclick="window.location.href='../index.html'">Back</button>
-      <nav>
-        <!--Hamburger menu-->
-        <ul class="grid">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./allmovies.html">Movies</a></li>
-          <li><a href="./allseries.html">Series</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <button class="welcome" role="link" onclick="window.location.href=''">Rent</button>
+    <header class="fullmoviepage">
       <div class="banner">
+        <a href="../index.html">< Back</a>
+        <!--Hamburger menu-->
+        <nav class="hamburger">
+          <ul class="grid">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./allmovies.html">Movies</a></li>
+            <li><a href="./allseries.html">Series</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    <main>
+      <button class="rentbutton" role="link" onclick="window.location.href=''">Rent</button>
+      <div class="banner moviebanner">
         <div class="grid">
-          <p>Stars</p>
-          <p>Genre</p>
-          <p>Date</p>
-          <p>Time</p>
+          <p class="note">
+            <i class="fa-solid fa-star selected"></i>
+            <i class="fa-solid fa-star selected"></i>
+            <i class="fa-solid fa-star selected"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+          <p class="genre space">Genre</p>
+          <p class="genre space">Date</p>
+          <p class="genre space"><i class="fa-solid fa-clock"></i>Time</p>
         </div>
-        <p><button>Checklist</button></p>
+        <p><a href="#"><i class="fa-solid fa-check"></i></a></p>
       </div>
-      <h3>Series / Movie Title</h3>
-      <div>
-        <p><span>Director</span></p>
-        <p>Paul Something</p>
+      <h3 class="singlemovietitle">Series / Movie Title</h3>
+      <div class="director">
+        <p><span class="directorstitle">Director</span></p>
+        <p class="directorsname">Paul Something</p>
       </div>
-      <p>Lorem Ipsum blablabla</p>
-      <ul class="grid">
+      <p class="resume"r>Lorem Ipsum blablabla</p>
+      <ul class="grid taglist">
         <li>
-          <button role="link" onclick="window.location.href=''">DVD</button>
+          <a href='#' class="tagbutton">DVD</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">VHS</button>
+          <a href='#' class="tagbutton">VHS</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">BluRay</button>
+          <a href='#' class="tagbutton">BluRay</a>
         </li>
       </ul>
       <h4>Cast</h4>
       <hr>
-      <ul class="grid">
+      <ul class="grid actors">
         <li>
-          <button role="link" onclick="window.location.href=''">Image</button>
+          <a href='#'><i class="fa-solid fa-user"></i></button>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">Image</button>
+          <a href='#'><i class="fa-solid fa-user"></i></button>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">Image</button>
+          <a href='#'><i class="fa-solid fa-user"></i></button>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">Image</button>
+          <a href='#'><i class="fa-solid fa-user"></i></button>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">Image</button>
+          <a href='#'><i class="fa-solid fa-user"></i></button>
         </li>
       </ul>
       <h4>You may also like</h4>
       <hr>
-      <ul class="grid">
-        <!--Mix of movies and series-->
-        <li onclick="window.location.href='./singlepage.html'">
-              <p>Available</p>
-              <div>
-                <h4>Serie Title</h4>
-                <p>Genre</p>
-                <p>Note</p>
+      <ul class="cards">
+        <!--Mix of series and series-->
+        <li class="moviewhite">
+          <a href="./singlepage.html">
+              <p class="available">Available</p>
+              <div class="infos">
+                <h4 class="title">Movie Title</h4>
+                <p class="genre">Genre</p>
+                <p class="note">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
               </div>
+          </a>
         </li>
-        <li onclick="window.location.href='./singlepage.html'">
-              <p>Available</p>
-              <div>
-                <h4>Movie Title</h4>
-                <p>Genre</p>
-                <p>Note</p>
+        <li class="moviewhite">
+          <a href="./singlepage.html">
+              <p class="available">Available</p>
+              <div class="infos">
+                <h4 class="title">Movie Title</h4>
+                <p class="genre">Genre</p>
+                <p class="note">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
               </div>
+          </a>
         </li>
-        <li onclick="window.location.href='./singlepage.html'">
-              <p>Available</p>
-              <div>
-                <h4>Serie Title</h4>
-                <p>Genre</p>
-                <p>Note</p>
+        <li class="moviewhite">
+          <a href="./singlepage.html">
+              <p class="available">Available</p>
+              <div class="infos">
+                <h4 class="title">Movie Title</h4>
+                <p class="genre">Genre</p>
+                <p class="note">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
               </div>
+          </a>
         </li>
       </ul>
       <h5>Tags</h5>
       <ul class="grid">
         <li>
-          <button role="link" onclick="window.location.href=''">#</button>
+          <a href='#' class="tagbutton">#</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">#</button>
+          <a href='#' class="tagbutton">#</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">#</button>
+          <a href='#' class="tagbutton">#</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">#</button>
+          <a href='#' class="tagbutton">#</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">#</button>
+          <a href='#' class="tagbutton">#</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">#</button>
+          <a href='#' class="tagbutton">#</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">#</button>
+          <a href='#' class="tagbutton">#</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">#</button>
+          <a href='#' class="tagbutton">#</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">#</button>
+          <a href='#' class="tagbutton">#</a>
         </li>
         <li>
-          <button role="link" onclick="window.location.href=''">#</button>
+          <a href='#' class="tagbutton">#</a>
+        </li>
+        <li>
+          <a href='#' class="tagbutton">#</a>
+        </li>
+        <li>
+          <a href='#' class="tagbutton">#</a>
+        </li>
+        <li>
+          <a href='#' class="tagbutton">#</a>
+        </li>
+        <li>
+          <a href='#' class="tagbutton">#</a>
+        </li>
+        <li>
+          <a href='#' class="tagbutton">#</a>
+        </li>
+        <li>
+          <a href='#' class="tagbutton">#</a>
         </li>
       </ul>
     </main>
     <footer>
       <div class="banner">
-        <h5>MovieRent</h5>
+        <h1>MovieRent</h1>
         <ul class="grid">
           <li>
-            <button role="link" onclick="window.location.href='https://www.instagram.com/'">Instagram</button>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
           </li>
           <li>
-            <button role="link" onclick="window.location.href='https://www.facebook.com/'">Facebook</button>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>            
           </li>
           <li>
-            <button role="link" onclick="window.location.href='https://www.twitter.com/'">Twitter</button>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
           </li>
         </ul>
       </div>
