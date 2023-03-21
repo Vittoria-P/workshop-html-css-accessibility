@@ -16,6 +16,23 @@ html{
 .moviebanner .grid {
   height: 0em;
 }
+
+.btn-menu-toggle {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:16px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+
 .fa-clock{
   background-color: rgb(220,220,220);
 }
@@ -36,7 +53,7 @@ html{
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 3em;
-  padding-top: 3em;
+  padding-top: 1em;
   padding-right: 0.5em;
   letter-spacing: 0.1em;
 }
