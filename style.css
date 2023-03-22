@@ -111,12 +111,27 @@ nav.hamburger a {
 .category {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* CARDS */
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .grid {
   display: flex;
   flex-wrap: wrap;
+}
+.movie {
+  background-color: rgb(220, 220, 220);
+  border-radius: 30px 30px 30px 30px;
+  margin: 0.5em;
+  width: 100%;
+  padding: 1em;
 }
 .space {
   margin-left: 0.75em;
@@ -146,14 +161,7 @@ nav.hamburger a {
   font-size: 14px;
   color: grey;
 }
-.movie {
-  background-color: rgb(220, 220, 220);
-  border-radius: 30px 30px 30px 30px;
-  margin-right: 1em;
-  width: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
-}
+
 .moviewhite {
   background-color: white;
   border-radius: 30px 30px 30px 30px;
@@ -169,13 +177,7 @@ nav.hamburger a {
   padding-left: 1em;
   padding-right: 1em;
 }
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
-  padding-left: 0px;
-}
+
 .cardsgrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
