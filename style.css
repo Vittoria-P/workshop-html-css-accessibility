@@ -74,6 +74,10 @@ nav.hamburger a {
   text-decoration: none;
 }
 
+.fa-bars{
+  padding-left: 10px;
+}
+
 /* Single page */
 .fa-clock {
   background-color: rgb(220, 220, 220);
@@ -219,10 +223,6 @@ nav.hamburger a {
   align-content: center;
   align-items: center;
   padding-left: 0.5em;
-}
-
-.test {
-  align-items: center;
 }
 
 .selected {
