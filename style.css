@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
+<<<<<<< HEAD
 body{
   margin: 0;
   padding: 0;
@@ -12,10 +13,63 @@ main{
 }
 
 .banner{
+=======
+body {
+  /*margin: auto;*/
+  /* padding: 0; */
+  font-family: "Roboto", sans-serif;
+}
+/* html {
+  width: 425px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+} */
+ul {
+  list-style-type: none;
+}
+h1,
+.hamburger,
+.banner a {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  font-style: italic;
+}
+hr {
+  margin-top: -1em;
+}
+
+/* HEADER */
+header {
+  height: 20em;
+  background-color: rgb(220, 220, 220);
+  padding: 1.5em;
+}
+nav.hamburger a {
+  margin-left: 0.75em;
+  text-transform: lowercase;
+}
+.banner {
+>>>>>>> Vitto
   display: flex;
   justify-content: space-between;
 }
-.moviebanner, .moviebanner .grid p{
+.moviebanner,
+.moviebanner .grid p {
   align-items: center;
   margin-bottom: 0em;
 }
@@ -23,35 +77,54 @@ main{
   height: 0em;
 }
 
+/* TOOGLE MENU */
 .btn-menu-toggle {
-	background-color:transparent;
-	border-radius:6px;
-	border:1px solid #C89002;
-	display:inline-block;
-	cursor:pointer;
-	color:#C89002;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid #c89002;
+  display: inline-block;
+  cursor: pointer;
+  color: #c89002;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
 }
+<<<<<<< HEAD
 .fa-clock{
   background-color: rgb(220,220,220);
+=======
+
+/* Single page */
+.fa-clock {
+  background-color: rgb(220, 220, 220);
+>>>>>>> Vitto
   margin-right: 0.25em;
 }
-.fa-check{
+
+.fa-check {
   background-color: white;
   padding: 0.25em;
   font-size: 20px;
   margin-right: 2.5em;
-  color: rgb(220,220,220);
+  color: rgb(220, 220, 220);
   border-radius: 50%;
 }
+<<<<<<< HEAD
 .center{
   text-align: center;
 }
 .welcome{
+=======
+
+/* IDK */
+/* .center {
+  display: flex;
+  justify-content: center;
+} */
+.welcome {
+>>>>>>> Vitto
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -60,51 +133,59 @@ main{
   padding-right: 0.5em;
   letter-spacing: 0.1em;
 }
-.category{
+
+/* CATEGORIE */
+.category {
   display: flex;
   align-items: center;
 }
-ul{
-  list-style-type: none;
-}
-.grid{
+
+/* CARDS */
+.grid {
   display: flex;
   flex-wrap: wrap;
 }
-.space{
+.space {
   margin-left: 0.75em;
 }
+<<<<<<< HEAD
 .available{
+=======
+
+.available {
+>>>>>>> Vitto
   text-align: left;
 }
-.genre{
+.genre {
   font-size: 0.75em;
 }
-.title, .genre, .note{
+.title,
+.genre,
+.note {
   text-align: right;
   margin-top: -0.5em;
 }
-.title{
+.title {
   margin-bottom: 0.5em;
 }
-.infos{
+.infos {
   display: flex;
   flex-direction: column;
   padding-top: 3em;
 }
-.note{
+.note {
   font-size: 14px;
   color: grey;
 }
-.movie{
-  background-color: rgb(220,220,220);
+.movie {
+  background-color: rgb(220, 220, 220);
   border-radius: 30px 30px 30px 30px;
   margin-right: 1em;
   width: 100%;
   padding-left: 1em;
   padding-right: 1em;
 }
-.moviewhite{
+.moviewhite {
   background-color: white;
   border-radius: 30px 30px 30px 30px;
   margin-right: 1em;
@@ -112,14 +193,14 @@ ul{
   padding-left: 1em;
   padding-right: 1em;
 }
-.moviesgrid{
-  background-color: rgb(220,220,220);
+.moviesgrid {
+  background-color: rgb(220, 220, 220);
   border-radius: 30px 30px 30px 30px;
   margin-right: 1em;
   padding-left: 1em;
   padding-right: 1em;
 }
-.cards{
+.cards {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -133,35 +214,12 @@ ul{
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   padding-left: 0px;
-  }  
-h1, .hamburger, .banner a{
-  font-size: 1em;
-  display: flex;
-  align-items: center;
 }
-a{
-  color: black;
-  text-decoration: none;
-}
-a:visited{
-  color: black;
-}
-a:hover{
-  font-style: italic;
-}
-nav.hamburger a{
-  margin-left: 0.75em;
-  text-transform: lowercase;
-}
-header{
-  height: 20em;
-  background-color: rgb(220,220,220);
-  padding: 1.5em;
-}
-.fullmoviepage{
+
+.fullmoviepage {
   height: 100%;
 }
-.points{
+.points {
   display: flex;
   justify-content: center;
   margin-top: -1em;
@@ -169,22 +227,22 @@ header{
   font-size: 0.5em;
   color: white;
 }
-.search{
+.search {
   width: 75%;
   border-radius: 30px 0px 0px 30px;
-  background-color: rgb(220,220,220);
+  background-color: rgb(220, 220, 220);
   border-color: transparent;
   height: 45px;
 }
-.searchbar{
+.searchbar {
   margin-top: 1em;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
-.fa-magnifying-glass{
-  background-color: rgb(169,169,169);
+.fa-magnifying-glass {
+  background-color: rgb(169, 169, 169);
   border-radius: 0px 30px 30px 0px;
   height: 45px;
   width: 2em;
@@ -192,80 +250,60 @@ header{
   align-items: center;
   padding-left: 0.5em;
 }
-.selected{
+.selected {
   color: black;
 }
-h3{
-  text-transform: uppercase;
-}
-footer .center{
-  font-size: 12px;
-}
-footer .banner{
-  background-color: rgb(220,220,220);
-  border-radius: 30px 30px 0px 0px;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
-footer .fa-brands{
-  color: white;
-  background-color: black;
-  padding: 0.25em;
-  border-radius: 50%;
-  margin-left: 1em;
-}
-.allbutton{
-  background-color: rgb(220,220,220);
+
+.allbutton {
+  background-color: rgb(220, 220, 220);
   border-radius: 30px 30px 30px 30px;
   padding: 0.5em 1em 0.5em 1em;
   margin-left: 5em;
   font-size: 12px;
 }
-.tagbutton{
+.tagbutton {
   background-color: white;
   border-radius: 30px 30px 30px 30px;
   padding: 0.1em 0.75em 0.1em 0.75em;
   margin-right: 1em;
   font-size: 12px;
 }
-.taglist{
+.taglist {
   padding-left: 0em;
 }
-.rentbutton{
-    background-color: black;
-    color: rgb(220,220,220);
-    margin-left: 75%;
-    margin-top: 50%;
-    text-transform: uppercase;
-    border-radius: 30px 30px 30px 30px;
-    padding: 0.5em 1em 0.5em 1em;
-    font-size: 16px;
-    margin-bottom: 10%;
+.rentbutton {
+  background-color: black;
+  color: rgb(220, 220, 220);
+  margin-left: 75%;
+  margin-top: 50%;
+  text-transform: uppercase;
+  border-radius: 30px 30px 30px 30px;
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 16px;
+  margin-bottom: 10%;
 }
-.category .fa-solid{
+.category .fa-solid {
   margin-left: 1em;
 }
-.singlemovietitle{
+.singlemovietitle {
   text-transform: capitalize;
   margin-top: -0.25em;
   font-size: 25px;
 }
-.director{
+.director {
   display: flex;
   font-size: 15px;
   margin-top: -2em;
 }
-.directorstitle{
+.directorstitle {
   font-style: italic;
   margin-right: 1em;
 }
-.resume{
+.resume {
   font-style: italic;
 }
-hr{
-  margin-top: -1em;
-}
-.actors li{
+
+.actors li {
   border: solid;
   border-color: black;
   border-width: 1px;
@@ -278,6 +316,24 @@ hr{
   justify-content: center;
   margin-right: 0.5em;
 }
-.actors{
+.actors {
   padding-left: 0px;
+}
+
+/* FOOTER */
+footer .center {
+  font-size: 12px;
+}
+footer .banner {
+  background-color: rgb(220, 220, 220);
+  border-radius: 30px 30px 0px 0px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+footer .fa-brands {
+  color: white;
+  background-color: black;
+  padding: 0.25em;
+  border-radius: 50%;
+  margin-left: 1em;
 }
