@@ -94,14 +94,16 @@ nav.hamburger a {
   display: flex;
   justify-content: center;
 } */
-.welcome {
+.welcome, .titlepage {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 3em;
-  padding-top: 1em;
-  padding-right: 0.5em;
+  padding-right: 1em;
   letter-spacing: 0.1em;
+}
+.welcome{
+  padding-top: 1em;
 }
 
 /* CATEGORIE */
