@@ -13,14 +13,25 @@
       <div class="banner">
         <a href="../index.html">Back</a>
         <!--Hamburger menu-->
-        <nav class="hamburger">
-          <ul class="grid">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./allseries.html">Movies</a></li>
-            <li><a href="./allseries.html">Series</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="aria-navbar">
+          <button id="menu-toggle" class="btn-menu-toggle" aria-controls="menu" aria-expanded="false" aria-haspopup="true" aria-label="menu-toggle">Menu <i class="fa-solid fa-bars"></i></button>
+          <nav id="menu" class="aria-nav" aria-label="Show/Hide menu" aria-hidden="true">
+            <ul role="menu">
+              <li>
+                <a href="../index.html" role="menuitem" tabindex="0">Home</a>
+              </li>
+              <li>
+                <a href="../pages/allmovies.html" role="menuitem" tabindex="-1">Movies</a>
+              </li>
+              <li>
+                <a href="../pages/allseries.html" role="menuitem" tabindex="-1">Series</a>
+              </li>
+              <li>
+                <a href="#" role="menuitem" tabindex="-1">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <h2 class="welcome">All Movies</h2>
     </header>
@@ -185,10 +196,10 @@
           </li>
         </ul>
       </div>
-      <p class="center">
-        © 2023 MovieRent - <a href="#">Mentions légales</a> -
-        <a href="#">CGV</a> - <a href="#"> Politique de confidentialité</a>
-      </p>
+      <div class="center">
+        <p>© 2023 MovieRent - <a href="#">Mentions légales</a> - <a href="#">CGV</a> - <a href="#"> Politique de confidentialité</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
