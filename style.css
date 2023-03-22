@@ -94,7 +94,8 @@ nav.hamburger a {
   display: flex;
   justify-content: center;
 } */
-.welcome, .titlepage {
+.welcome,
+.titlepage {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -102,7 +103,7 @@ nav.hamburger a {
   padding-right: 1em;
   letter-spacing: 0.1em;
 }
-.welcome{
+.welcome {
   padding-top: 1em;
 }
 
@@ -214,12 +215,15 @@ nav.hamburger a {
   border-radius: 0px 30px 30px 0px;
   height: 45px;
   width: 2em;
-  display: flex;
-  align-items: center;
+  display: flex !important;
   align-content: center;
-
   padding-left: 0.5em;
 }
+
+.test {
+  align-items: center;
+}
+
 .selected {
   color: black;
 }
