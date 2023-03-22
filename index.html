@@ -35,31 +35,47 @@
           >
             <ul role="menu">
               <li>
-                <a href="./index.html" role="menuitem" tabindex="0">Home</a>
+                <a
+                  href="./index.html"
+                  alt="Home page"
+                  role="menuitem"
+                  tabindex="0"
+                  >Home</a
+                >
               </li>
               <li>
-                <a href="./pages/allmovies.html" role="menuitem" tabindex="-1"
+                <a
+                  href="./pages/allmovies.html"
+                  alt="Movies page"
+                  role="menuitem"
+                  tabindex="-1"
                   >Movies</a
                 >
               </li>
               <li>
-                <a href="./pages/allseries.html" role="menuitem" tabindex="-1"
+                <a
+                  href="./pages/allseries.html"
+                  alt="Series page"
+                  role="menuitem"
+                  tabindex="-1"
                   >Series</a
                 >
               </li>
               <li>
-                <a href="#" role="menuitem" tabindex="-1">Contact</a>
+                <a href="#" alt="Contact page" role="menuitem" tabindex="-1"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
         </div>
       </div>
       <h2 class="welcome">Welcome</h2>
-      <div class="points">
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-solid fa-circle selected"></i>
-        <i class="fa-solid fa-circle"></i>
+      <div class="points" alt="Carroussel of images">
+        <i class="fa-solid fa-circle" alt="Images one"></i>
+        <i class="fa-solid fa-circle" alt="Images two"></i>
+        <i class="fa-solid fa-circle selected" alt="Images three"></i>
+        <i class="fa-solid fa-circle" alt="Images four"></i>
       </div>
     </header>
     <main>
@@ -67,6 +83,17 @@
         <input type="search" class="search" />
         <i class="fa-solid fa-magnifying-glass test"></i>
       </div>
+
+      <div class="center searchbar">
+        <form class="center searchbar" role="search" action="/" method="get">
+          <input type="text" class="search" />
+
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass" visually-hidden></i>
+          </button>
+        </form>
+      </div>
+
       <ul>
         <li>
           <div class="category">
