@@ -7,6 +7,10 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+main{
+  margin: 10px;
+}
+
 .banner{
   display: flex;
   justify-content: space-between;
