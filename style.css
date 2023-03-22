@@ -174,7 +174,6 @@ nav.hamburger a {
 .moviesgrid {
   background-color: rgb(220, 220, 220);
   border-radius: 30px 30px 30px 30px;
-  margin-right: 1em;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -233,6 +232,10 @@ nav.hamburger a {
   align-content: center;
   align-items: center;
   padding-left: 0.5em;
+}
+
+.container{
+  margin: 20px;;
 }
 
 .test {
