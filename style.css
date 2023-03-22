@@ -205,7 +205,9 @@ nav.hamburger a {
 }
 .searchbar {
   margin-top: 1em;
+  display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
 }
 .fa-magnifying-glass {
@@ -215,6 +217,7 @@ nav.hamburger a {
   width: 2em;
   display: flex !important;
   align-content: center;
+  align-items: center;
   padding-left: 0.5em;
 }
 
