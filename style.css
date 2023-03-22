@@ -37,6 +37,11 @@ hr {
 }
 
 /* HEADER */
+
+.logo{
+  height: 35px;
+  border-radius: 20px;
+}
 header {
   height: 20em;
   background-color: rgb(220, 220, 220);
@@ -205,7 +210,7 @@ nav.hamburger a {
   border-radius: 30px 0px 0px 30px;
   background-color: rgb(220, 220, 220);
   border-color: transparent;
-  height: 45px;
+  height: 39px;
 }
 .searchbar {
   margin-top: 1em;
@@ -213,6 +218,11 @@ nav.hamburger a {
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+.btn-search{
+  border: 0px;
+  padding: 0px;
+  background-color: transparent;
 }
 .fa-magnifying-glass {
   background-color: rgb(169, 169, 169);

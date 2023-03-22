@@ -11,35 +11,58 @@
   <body>
     <header>
       <div class="banner">
-        <a href="../index.html">Back</a>
+        <img class="logo" src="../images/LogoMovieRentApp.png" alt="Logo movierent app">
         <!--Hamburger menu-->
         <div class="aria-navbar">
-          <button id="menu-toggle" class="btn-menu-toggle" aria-controls="menu" aria-expanded="false" aria-haspopup="true" aria-label="menu-toggle">Menu<i class="fa-solid fa-bars"></i></button>
+          <button id="menu-toggle" class="btn-menu-toggle" aria-controls="menu" aria-expanded="false" aria-haspopup="true" aria-label="menu-toggle">Menu<i class="fa-solid fa-bars" alt="icone du menu"></i></button>
           <nav id="menu" class="aria-nav" aria-label="Show/Hide menu" aria-hidden="true">
             <ul role="menu">
               <li>
-                <a href="../index.html" role="menuitem" tabindex="0">Home</a>
+                <a href="../index.html" alt="lien vers la page principale" role="menuitem" tabindex="0">Home</a>
               </li>
               <li>
-                <a href="../pages/allmovies.html" role="menuitem" tabindex="-1">Movies</a>
+                <a href="../pages/allmovies.html" alt="lien vers la page avec tous les films" role="menuitem" tabindex="-1">Movies</a>
               </li>
               <li>
-                <a href="../pages/allseries.html" role="menuitem" tabindex="-1">Series</a>
+                <a href="../pages/allseries.html" alt="lien vers la page avec toutes les series" role="menuitem" tabindex="-1">Series</a>
               </li>
               <li>
-                <a href="#" role="menuitem" tabindex="-1">Contact</a>
+                <a href="#" alt="lien vers la page de contact" role="menuitem" tabindex="-1">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <h2 class="titlepage">All Series</h2>
+      <div>
+        <h2 class="titlepage">All Series</h2>
+        <div class="points" alt="Carroussel of images">
+          <i class="fa-solid fa-circle" alt="Images one"></i>
+          <i class="fa-solid fa-circle" alt="Images two"></i>
+          <i class="fa-solid fa-circle selected" alt="Images three"></i>
+          <i class="fa-solid fa-circle" alt="Images four"></i>
+        </div>
+      </div>
     </header>
     <main>
-      <div class="center searchbar">
-        <input type="search" class="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
+      <section class="center searchbar">
+        <form class="center searchbar" role="search" action="/" method="get">
+          <input type="text" class="search" />
+          <button class="btn-search" type="submit">
+            <i class="fa-solid fa-magnifying-glass" alt="loupe icon" visually-hidden></i>
+          </button>
+        </form>
+      </section>
+      <section class="">
+        <div class="category">
+          <h3>Filter</h3>
+          <i class="fa-solid fa-filter" alt="icone filtre"></i>
+        </div>
+        <article>
+          <div class="cardsgrid">
+
+          </div>
+        </article>
+      </section>
       <ul>
         <li>
           <div class="category">
@@ -186,18 +209,20 @@
         <h1>MovieRent</h1>
         <ul class="grid">
           <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/" alt="link to instagram page"><i class="fa-brands fa-instagram" alt="instagram icon"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>            
+            <a href="https://www.facebook.com/" alt="link to facebook page"><i class="fa-brands fa-facebook" alt="facebook icon"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.twitter.com/" alt="link to twitter page"><i class="fa-brands fa-twitter" alt="twitter icon"></i></a>
           </li>
         </ul>
       </div>
       <div class="center">
-        <p>© 2023 MovieRent - <a href="#">Mentions légales</a> - <a href="#">CGV</a> - <a href="#"> Politique de confidentialité</a>
+        <p>
+          © 2023 MovieRent - <a href="#" alt="legal infornation">Legal information and credits</a> -
+          <a href="#" alt="legal infornation">CGV</a> - <a href="#" alt="legal infornation"> Privacy policy</a>
         </p>
       </div>
     </footer>
