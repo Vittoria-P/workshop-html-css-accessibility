@@ -217,6 +217,7 @@ nav.hamburger a {
   width: 2em;
   display: flex !important;
   align-content: center;
+  align-items: center;
   padding-left: 0.5em;
 }
 
