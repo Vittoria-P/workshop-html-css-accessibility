@@ -17,6 +17,10 @@ h1,
   align-items: center;
 }
 
+h2{
+  font-size: 2.5em;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -40,10 +44,10 @@ hr {
 
 .logo{
   height: 35px;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 header {
-  height: 20em;
+  height: 18em;
   background-color: rgb(220, 220, 220);
   padding: 1.5em;
 }
@@ -98,22 +102,12 @@ nav.hamburger a {
   border-radius: 50%;
 }
 
-/* IDK */
-/* .center {
-  display: flex;
-  justify-content: center;
-} */
-.welcome,
 .titlepage {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-size: 3em;
   padding-right: 1em;
   letter-spacing: 0.1em;
-}
-.welcome {
-  padding-top: 1em;
 }
 
 /* CATEGORIE */
@@ -121,6 +115,13 @@ nav.hamburger a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.category_cards{
+  display: flex;
+  align-items: center;
+}
+.fa-filter{
+  margin-left: 10px;
 }
 
 /* CARDS */
@@ -133,7 +134,6 @@ nav.hamburger a {
 }
 .grid {
   display: flex;
-  flex-wrap: wrap;
 }
 .movie {
   background-color: rgb(220, 220, 220);
@@ -184,6 +184,7 @@ nav.hamburger a {
   border-radius: 30px 30px 30px 30px;
   padding-left: 1em;
   padding-right: 1em;
+  padding-bottom: 1em;
 }
 
 .cardsgrid {
@@ -207,7 +208,7 @@ nav.hamburger a {
   color: white;
 }
 .search {
-  width: 75%;
+  width: 80%;
   border-radius: 30px 0px 0px 30px;
   background-color: rgb(220, 220, 220);
   border-color: transparent;
@@ -237,7 +238,8 @@ nav.hamburger a {
 }
 
 .container{
-  margin: 20px;;
+  margin: 20px;
+  margin-bottom: 60px;
 }
 
 .test {
