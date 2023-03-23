@@ -11,7 +11,7 @@ body {
 ul {
   list-style-type: none;
 }
-h1,
+
 .hamburger,
 .banner a {
   font-size: 1em;
@@ -19,7 +19,7 @@ h1,
   align-items: center;
 }
 
-h2 {
+h1 {
   font-size: 2.5em;
 }
 
@@ -34,8 +34,9 @@ a:hover {
   font-style: italic;
 }
 
-h3 {
+h2 {
   text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 hr {
