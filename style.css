@@ -4,6 +4,8 @@ body {
   margin: auto;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #ece8ef;
 }
 
 ul {
@@ -22,12 +24,12 @@ h2 {
 }
 
 a {
-  color: black;
+  color: #ece8ef;
   text-decoration: none;
 }
-a:visited {
+/* a:visited {
   color: black;
-}
+} */
 a:hover {
   font-style: italic;
 }
@@ -48,8 +50,9 @@ hr {
 }
 header {
   height: 18em;
-  background-color: rgb(220, 220, 220);
   padding: 1.5em;
+  background-image: linear-gradient(180deg, rgba(18,18,18,1) 0%, rgba(122,130,118,0.34217436974789917) 60%, rgba(18,18,18,1) 100%), url(/images/Midsommar.jpg);
+  background-size: cover;
 }
 nav.hamburger a {
   margin-left: 0.75em;
@@ -136,7 +139,8 @@ nav.hamburger a {
   display: flex;
 }
 .movie {
-  background-color: rgb(220, 220, 220);
+  background-image: radial-gradient(circle, rgba(131,127,127,0.5858718487394958) 0%, rgba(73,73,73,1) 65%), url(./images/BlackSwan.jpg);
+  background-size: cover;
   border-radius: 30px 30px 30px 30px;
   margin: 0.5em;
   width: 100%;
@@ -180,7 +184,17 @@ nav.hamburger a {
   padding-right: 1em;
 }
 .moviesgrid {
-  background-color: rgb(220, 220, 220);
+  background-image: radial-gradient(circle, rgba(131,127,127,0.5858718487394958) 0%, rgba(73,73,73,1) 65%), url(./images/Joker.jpg);
+  background-size: cover;
+  border-radius: 30px 30px 30px 30px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.seriesgrid {
+  background-image: radial-gradient(circle, rgba(131,127,127,0.5858718487394958) 0%, rgba(73,73,73,1) 65%), url(./images/Gambit.jpg);
+  background-size: cover;
   border-radius: 30px 30px 30px 30px;
   padding-left: 1em;
   padding-right: 1em;
@@ -228,7 +242,7 @@ nav.hamburger a {
   background-color: transparent;
 }
 .fa-magnifying-glass {
-  background-color: rgb(169, 169, 169);
+  background-color: #c89002;
   border-radius: 0px 30px 30px 0px;
   height: 45px;
   width: 2em;
@@ -248,7 +262,9 @@ nav.hamburger a {
 }
 
 .allbutton {
-  background-color: rgb(220, 220, 220);
+  background-color: #c89002;
+  color: #121212;
+  font-weight: bold;
   border-radius: 30px 30px 30px 30px;
   padding: 0.5em 1em 0.5em 1em;
   margin-left: 5em;
@@ -278,6 +294,13 @@ nav.hamburger a {
 .category .fa-solid {
   margin-left: 1em;
 }
+.fa-filter, .fa-star.selected{
+  color: #c89002;
+}
+.fa-star{
+  color: #ece8ef;
+}
+
 .singlemovietitle {
   text-transform: capitalize;
   margin-top: -0.25em;
@@ -316,17 +339,16 @@ nav.hamburger a {
 /* FOOTER */
 
 .footer {
-  background-color: rgb(220, 220, 220);
+  background-color: #121212;
   border-radius: 30px 30px 0px 0px;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  box-shadow: 0px -10px 10px 0px rgba(200,144,2,1);
   display: flex;
-  align-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 footer .fa-brands {
-  color: white;
-  background-color: black;
+  color: #121212;
+  background-color: #c89002;
   padding: 0.25em;
   border-radius: 50%;
   margin-left: 1em;
