@@ -9,172 +9,181 @@
     <title>Movie Title</title>
   </head>
   <body>
-    <header class="fullmoviepage">
+    <header>
       <div class="banner">
-        <a href="../index.html">Back</a>
+        <img
+          class="logo"
+          src="../images/LogoMovieRentApp.png"
+          alt="Logo movierent app"
+          
+        />
         <!--Hamburger menu-->
         <div class="aria-navbar">
-          <button id="menu-toggle" class="btn-menu-toggle" aria-controls="menu" aria-expanded="false" aria-haspopup="true" aria-label="menu-toggle">Menu<i class="fa-solid fa-bars"></i></button>
-          <nav id="menu" class="aria-nav" aria-label="Show/Hide menu" aria-hidden="true">
-            <ul role="menu">
+          <button
+            id="menu-toggle"
+            class="btn-menu-toggle"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="menu-toggle"
+          >Menu<i class="fa-solid fa-bars" alt="icone du menu"></i>
+          </button>
+          <nav id="menu" class="aria-nav" aria-label="Voir ou cacher le menu">
+            <ul>
               <li>
-                <a href="../index.html" role="menuitem" tabindex="0">Home</a>
+                <a
+                  href="../index.html"
+                  alt="lien vers la page principale"
+                  tabindex="0"
+                  >Home</a>
               </li>
               <li>
-                <a href="../pages/allmovies.html" role="menuitem" tabindex="-1">Movies</a>
+                <a
+                  href="../pages/allmovies.html"
+                  alt="lien vers la page avec tous les films"
+                  tabindex="-1"
+                  >Films</a>
               </li>
               <li>
-                <a href="../pages/allseries.html" role="menuitem" tabindex="-1">Series</a>
+                <a
+                  href="../pages/allseries.html"
+                  alt="lien vers la page avec toutes les series"
+                  tabindex="-1"
+                  >Series</a>
               </li>
               <li>
-                <a href="#" role="menuitem" tabindex="-1">Contact</a>
+                <a href="#" alt="lien vers la page de contact" tabindex="-1"
+                  >Contact</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
+      <button class="rentbutton" role="link" onclick="window.location.href=''">Rent</button>
     </header>
     <main>
-      <button class="rentbutton" role="link" onclick="window.location.href=''">Rent</button>
-      <div class="banner moviebanner">
-        <div class="grid">
-          <p class="note">
-            <i class="fa-solid fa-star selected"></i>
-            <i class="fa-solid fa-star selected"></i>
-            <i class="fa-solid fa-star selected"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </p>
-          <p class="genre space">Genre</p>
-          <p class="genre space">Date</p>
-          <p class="genre space"><i class="fa-solid fa-clock"></i>Time</p>
+      <section class="ficheinfo">
+        <div class="banner moviebanner">
+          <div class="note" alt="rating system with stars 3/5">
+            <i class="fa-solid fa-star selected" alt="star icon"></i>
+            <i class="fa-solid fa-star selected" alt="star icon"></i>
+            <i class="fa-solid fa-star selected" alt="star icon"></i>
+            <i class="fa-solid fa-star" alt="star icon"></i>
+            <i class="fa-solid fa-star" alt="star icon"></i>
+          </div>
+          <p class="space">Genre</p>
+          <p class="space">Date</p>
+          <p class="space"><i class="fa-solid fa-clock"></i>Time</p>
         </div>
-        <p><a href="#"><i class="fa-solid fa-check"></i></a></p>
       </div>
-      <h3 class="singlemovietitle">Series / Movie Title</h3>
-      <div class="director">
-        <p><span class="directorstitle">Director</span></p>
-        <p class="directorsname">Paul Something</p>
+      <div class="infos">
+        <h2 class="singlemovietitle">Series / Movie Title</h2>
+        <p><span class="directorstitle">Director : Paul Something</span></p>
+        <p class="resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor.</p>
       </div>
-      <p class="resume">Lorem Ipsum blablabla</p>
-      <ul class="grid taglist">
-        <li>
-          <a href='#' class="tagbutton">DVD</a>
-        </li>
-        <li>
-          <a href='#' class="tagbutton">VHS</a>
-        </li>
-        <li>
-          <a href='#' class="tagbutton">BluRay</a>
-        </li>
-      </ul>
-      <h4>Cast</h4>
+      <div class="taglist grid">   
+        <a href='#' class="tagbutton" alt="DVD">DVD</a>
+        <a href='#' class="tagbutton" alt="VHS">VHS</a>
+        <a href='#' class="tagbutton" alt="BluRay">BluRay</a>
+      </div>
+      <div class="taglist">
+        <h3>Cast</h3>
+        <hr>
+        <div class="grid">
+          <a href='#' aria-label="fiche acteur"><i class="fa-solid fa-circle-user"></i></a>
+          <a href='#' aria-label="fiche acteur"><i class="fa-solid fa-circle-user"></i></a>
+          <a href='#' aria-label="fiche cteur"><i class="fa-solid fa-circle-user"></i></a>
+          <a href='#' aria-label="fiche acteur"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+      </div>
+      
+      <h3>You may also like</h3>
       <hr>
-      <ul class="grid actors">
-        <li>
-          <a href='#'><i class="fa-solid fa-user"></i></a>
-        </li>
-        <li>
-          <a href='#'><i class="fa-solid fa-user"></i></a>
-        </li>
-        <li>
-          <a href='#'><i class="fa-solid fa-user"></i></a>
-        </li>
-        <li>
-          <a href='#'><i class="fa-solid fa-user"></i></a>
-        </li>
-        <li>
-          <a href='#'><i class="fa-solid fa-user"></i></a>
-        </li>
-      </ul>
-      <h4>You may also like</h4>
-      <hr>
-      <ul class="cards">
         <!--Mix of series and series-->
-        <li class="moviewhite">
-          <a href="./singlepage.html">
+        <div class="cards-singlepage">
+          <div class="movie-singlepage">
+            <a href="./pages/singlepage.html" alt="Voir la description">
               <p class="available">Available</p>
               <div class="infos">
-                <h4 class="title">Movie Title</h4>
+                <h4 class="title">Serie Title</h4>
                 <p class="genre">Genre</p>
-                <p class="note">
+                <div class="note" alt="notation avec etoiles 3/5">
                   <i class="fa-solid fa-star selected"></i>
                   <i class="fa-solid fa-star selected"></i>
                   <i class="fa-solid fa-star selected"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                </p>
+                </div>
               </div>
-          </a>
-        </li>
-        <li class="moviewhite">
-          <a href="./singlepage.html">
+            </a>
+          </div>
+          <div class="movie-singlepage">
+            <a href="./pages/singlepage.html" alt="Voir la description">
               <p class="available">Available</p>
               <div class="infos">
-                <h4 class="title">Movie Title</h4>
+                <h4 class="title">Serie Title</h4>
                 <p class="genre">Genre</p>
-                <p class="note">
+                <div class="note" alt="notation avec etoiles 3/5">
                   <i class="fa-solid fa-star selected"></i>
                   <i class="fa-solid fa-star selected"></i>
                   <i class="fa-solid fa-star selected"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                </p>
+                </div>
               </div>
-          </a>
-        </li>
-        <li class="moviewhite">
-          <a href="./singlepage.html">
-              <p class="available">Available</p>
-              <div class="infos">
-                <h4 class="title">Movie Title</h4>
-                <p class="genre">Genre</p>
-                <p class="note">
-                  <i class="fa-solid fa-star selected"></i>
-                  <i class="fa-solid fa-star selected"></i>
-                  <i class="fa-solid fa-star selected"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </p>
-              </div>
-          </a>
-        </li>
-      </ul>
-      <h5>Tags</h5>
-      <ul class="grid">
-        <li>
-          <a href='#' class="tagbutton">#</a>
-        </li>
-        <li>
-          <a href='#' class="tagbutton">#</a>
-        </li>
-        <li>
-          <a href='#' class="tagbutton">#</a>
-        </li>
-        <li>
-          <a href='#' class="tagbutton">#</a>
-        </li>
-      </ul>
+            </a>
+          </div>
+        </div>
+        <h3>Tags</h3>
+        <hr>
+        <div class="grid">
+            <a href='#' class="tagbutton">#</a>
+            <a href='#' class="tagbutton">#</a>
+            <a href='#' class="tagbutton">#</a>
+            <a href='#' class="tagbutton">#</a>
+        </div>
+      </section>
     </main>
     <footer>
-      <div class="banner">
-        <h1>MovieRent</h1>
-        <ul class="grid">
-          <li>
-            <a href="https://www.instagram.com/" alt="link to instagram page"><i class="fa-brands fa-instagram" alt="instagram icon"></i></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/" alt="link to facebook page"><i class="fa-brands fa-facebook" alt="facebook icon"></i></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/" alt="link to twitter page"><i class="fa-brands fa-twitter" alt="twitter icon"></i></a>
-          </li>
-        </ul>
+      <div class="footer">
+        <img
+          src="/images/LogoMovieRentApp.png"
+          alt="Logo MovieRent"
+          class="logo"
+        />
+        <div>
+          <ul class="grid">
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                aria-label="Lien vers la page instagram"
+                ><i class="fa-brands fa-instagram" alt="icone instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                aria-label="Lien vers la page facebook"
+                ><i class="fa-brands fa-facebook" alt="icone facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.twitter.com/"
+                aria-label="Lien vers la page twitter"
+                ><i class="fa-brands fa-twitter" alt="icone twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="center">
+      <div class="copyright">
         <p>
-          © 2023 MovieRent - <a href="#" alt="legal infornation">Legal information and credits</a> -
-          <a href="#" alt="legal infornation">CGV</a> - <a href="#" alt="legal infornation"> Privacy policy</a>
+          © 2023 MovieRent -
+          <a href="#" alt="Mentions légales">Mentions légales</a> -
+          <a href="#" alt="Link to cgv">CGV</a> -
+          <a href="#" alt="Politique de confidentialité"
+            >Politique de confidentialité</a>
         </p>
       </div>
     </footer>
