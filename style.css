@@ -373,3 +373,25 @@ footer .fa-brands {
   font-size: 12px;
   text-align: center;
 }
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: -2.5em;
+  padding-left: 0px;
+  margin-bottom: 2em;
+}
+.pagination li{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: solid;
+  border-color: rgba(200,144,2,1);
+  border-width: 1px;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
