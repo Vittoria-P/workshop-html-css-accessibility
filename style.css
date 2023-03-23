@@ -17,7 +17,7 @@ h1,
   align-items: center;
 }
 
-h2{
+h2 {
   font-size: 2.5em;
 }
 
@@ -42,7 +42,7 @@ hr {
 
 /* HEADER */
 
-.logo{
+.logo {
   height: 35px;
   border-radius: 15px;
 }
@@ -83,7 +83,7 @@ nav.hamburger a {
   text-decoration: none;
 }
 
-.fa-bars{
+.fa-bars {
   padding-left: 10px;
 }
 
@@ -106,7 +106,7 @@ nav.hamburger a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-right: 1em;
+  font-size: 2.5em;
   letter-spacing: 0.1em;
 }
 
@@ -116,11 +116,11 @@ nav.hamburger a {
   align-items: center;
   justify-content: center;
 }
-.category_cards{
+.category_cards {
   display: flex;
   align-items: center;
 }
-.fa-filter{
+.fa-filter {
   margin-left: 10px;
 }
 
@@ -212,16 +212,17 @@ nav.hamburger a {
   border-radius: 30px 0px 0px 30px;
   background-color: rgb(220, 220, 220);
   border-color: transparent;
-  height: 39px;
+  height: 45px;
 }
 .searchbar {
-  margin-top: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
-.btn-search{
+.btn-search {
   border: 0px;
   padding: 0px;
   background-color: transparent;
@@ -237,7 +238,7 @@ nav.hamburger a {
   padding-left: 0.5em;
 }
 
-.container{
+.container {
   margin: 20px;
   margin-bottom: 60px;
 }
