@@ -11,182 +11,229 @@
   <body>
     <header>
       <div class="banner">
-        <a href="../index.html">Back</a>
+        <img class="logo" src="../images/LogoMovieRentApp.png" alt="Logo movierent app">
         <!--Hamburger menu-->
-        <nav class="hamburger">
-          <ul class="grid">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/allmovies.html">Movies</a></li>
-            <li><a href="../pages/allseries.html">Series</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="aria-navbar">
+          <button id="menu-toggle" class="btn-menu-toggle" aria-controls="menu" aria-expanded="false" aria-haspopup="true" aria-label="menu-toggle">Menu<i class="fa-solid fa-bars" alt="icone du menu"></i></button>
+          <nav id="menu" class="aria-nav" aria-label="Voir ou chacher le menu">
+            <ul>
+              <li>
+                <a href="../index.html" alt="lien vers la page principale" tabindex="0">Home</a>
+              </li>
+              <li>
+                <a href="../pages/allmovies.html" alt="lien vers la page avec tous les films" tabindex="-1">Films</a>
+              </li>
+              <li>
+                <a href="../pages/allseries.html" alt="lien vers la page avec toutes les series" tabindex="-1">Series</a>
+              </li>
+              <li>
+                <a href="#" alt="lien vers la page de contact" tabindex="-1">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <h2 class="titlepage">All Series</h2>
+      <div>
+        <h1 class="titlepage">Toutes les séries</h1>
+        <div class="points" alt="Carroussel of images">
+          <i class="fa-solid fa-circle" alt="Images one"></i>
+          <i class="fa-solid fa-circle" alt="Images two"></i>
+          <i class="fa-solid fa-circle selected" alt="Images three"></i>
+          <i class="fa-solid fa-circle" alt="Images four"></i>
+        </div>
+      </div>
     </header>
     <main>
-      <div class="center searchbar">
-        <input type="search" class="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-      <ul>
-        <li>
-          <div class="category">
-            <h3>Filter</h3>
-            <i class="fa-solid fa-filter"></i>
+      <section class="center searchbar">
+        <form class="center searchbar" role="search" action="/" method="get">
+          <input type="text" class="search" placeholder="Recherche..."/>
+          <button class="btn-search" type="submit" aria-label="recherche">
+            <i class="fa-solid fa-magnifying-glass" alt="icone recherche" visually-hidden></i>
+          </button>
+        </form>
+      </section>
+      <section class="container">
+        <div class="category_cards">
+          <h2>Filter</h2>
+          <i class="fa-solid fa-filter" alt="icone filtre"></i>
+        </div>
+        <article>
+          <div class="cardsgrid">
+            <div class="seriesgrid">
+              <a href="../pages/singlepage.html" alt="lien vers la page du film">
+                <p class="available">Disponible</p>
+                <div class="infos">
+                  <h3 class="title">Titre Serie</h3>
+                  <p class="genre">Genre</p>
+                  <div class="note" alt="notation avec etoiles 3/5">
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="seriesgrid">
+              <a href="../pages/singlepage.html" alt="lien vers la page du film">
+                <p class="available">Disponible</p>
+                <div class="infos">
+                  <h3 class="title">Titre Serie</h3>
+                  <p class="genre">Genre</p>
+                  <div class="note" alt="notation avec etoiles 3/5">
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="seriesgrid">
+              <a href="../pages/singlepage.html" alt="lien vers la page du film">
+                <p class="available">Disponible</p>
+                <div class="infos">
+                  <h3 class="title">Titre Serie</h3>
+                  <p class="genre">Genre</p>
+                  <div class="note" alt="notation avec etoiles 3/5">
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="seriesgrid">
+              <a href="../pages/singlepage.html" alt="lien vers la page du film">
+                <p class="available">Disponible</p>
+                <div class="infos">
+                  <h3 class="title">Titre Serie</h3>
+                  <p class="genre">Genre</p>
+                  <div class="note" alt="notation avec etoiles 3/5">
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="seriesgrid">
+              <a href="../pages/singlepage.html" alt="lien vers la page du film">
+                <p class="available">Disponible</p>
+                <div class="infos">
+                  <h3 class="title">Titre Serie</h3>
+                  <p class="genre">Genre</p>
+                  <div class="note" alt="notation avec etoiles 3/5">
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="seriesgrid">
+              <a href="../pages/singlepage.html" alt="lien vers la page du film">
+                <p class="available">Disponible</p>
+                <div class="infos">
+                  <h3 class="title">Titre Serie</h3>
+                  <p class="genre">Genre</p>
+                  <div class="note" alt="notation avec etoiles 3/5">
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="seriesgrid">
+              <a href="../pages/singlepage.html" alt="lien vers la page du film">
+                <p class="available">Disponible</p>
+                <div class="infos">
+                  <h3 class="title">Titre Serie</h3>
+                  <p class="genre">Genre</p>
+                  <div class="note" alt="notation avec etoiles 3/5">
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="seriesgrid">
+              <a href="../pages/singlepage.html" alt="lien vers la page du film">
+                <p class="available">Disponible</p>
+                <div class="infos">
+                  <h3 class="title">Titre Serie</h3>
+                  <p class="genre">Genre</p>
+                  <div class="note" alt="notation avec etoiles 3/5">
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star selected" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                    <i class="fa-solid fa-star" alt="star icon"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
-          <ul class="cardsgrid">
-            <!--series list-->
-            <li class="moviesgrid">
-              <a href="./singlepage.html">
-                  <p class="available">Available</p>
-                  <div class="infos">
-                    <h4 class="title">Serie Title</h4>
-                    <p class="genre">Genre</p>
-                    <p class="note">
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                  </div>
-              </a>
-            </li>
-            <li class="moviesgrid">
-              <a href="./singlepage.html">
-                  <p class="available">Available</p>
-                  <div class="infos">
-                    <h4 class="title">Serie Title</h4>
-                    <p class="genre">Genre</p>
-                    <p class="note">
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                  </div>
-              </a>
-            </li>
-            <li class="moviesgrid">
-              <a href="./singlepage.html">
-                  <p class="available">Available</p>
-                  <div class="infos">
-                    <h4 class="title">Serie Title</h4>
-                    <p class="genre">Genre</p>
-                    <p class="note">
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                  </div>
-              </a>
-            </li>
-            <li class="moviesgrid">
-              <a href="./singlepage.html">
-                  <p class="available">Available</p>
-                  <div class="infos">
-                    <h4 class="title">Serie Title</h4>
-                    <p class="genre">Genre</p>
-                    <p class="note">
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                  </div>
-              </a>
-            </li>
-            <li class="moviesgrid">
-              <a href="./singlepage.html">
-                  <p class="available">Available</p>
-                  <div class="infos">
-                    <h4 class="title">Serie Title</h4>
-                    <p class="genre">Genre</p>
-                    <p class="note">
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                  </div>
-              </a>
-            </li>
-            <li class="moviesgrid">
-              <a href="./singlepage.html">
-                  <p class="available">Available</p>
-                  <div class="infos">
-                    <h4 class="title">Serie Title</h4>
-                    <p class="genre">Genre</p>
-                    <p class="note">
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                  </div>
-              </a>
-            </li>
-            <li class="moviesgrid">
-              <a href="./singlepage.html">
-                  <p class="available">Available</p>
-                  <div class="infos">
-                    <h4 class="title">Serie Title</h4>
-                    <p class="genre">Genre</p>
-                    <p class="note">
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                  </div>
-              </a>
-            </li>
-            <li class="moviesgrid">
-              <a href="./singlepage.html">
-                  <p class="available">Available</p>
-                  <div class="infos">
-                    <h4 class="title">Serie Title</h4>
-                    <p class="genre">Genre</p>
-                    <p class="note">
-                      <i class="fa-solid fa-star selected"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </p>
-                  </div>
-              </a>
-            </li>
-          </ul>
-        </li>
+        </article>
+      </section>
+      <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li>...</li>
+        <li><a href="#">10</a></li>
       </ul>
-      <!--RAJOUTER PAGINATION-->
     </main>
     <footer>
-      <div class="banner">
-        <h1>MovieRent</h1>
-        <ul class="grid">
-          <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>            
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-        </ul>
+      <div class="footer">
+        <img src="../images/LogoMovieRentApp.png" class="logo" alt="Logo MovieRent" />
+        <div>
+          <ul class="grid">
+            <li>
+              <a href="https://www.instagram.com/" aria-label="Lien vers la page instagram"
+                ><i class="fa-brands fa-instagram" alt="icone instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" aria-label="Lien vers la page facebook"
+                ><i class="fa-brands fa-facebook" alt="icone facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/" aria-label="Lien vers la page twitter"
+                ><i class="fa-brands fa-twitter" alt="icone twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="center">
-        <p>© 2023 MovieRent - <a href="#">Mentions légales</a> - <a href="#">CGV</a> - <a href="#"> Politique de confidentialité</a>
+      <div class="copyright">
+        <p>
+          © 2023 MovieRent -
+          <a href="#" alt="Mentions légales">Mentions légales</a> -
+          <a href="#" alt="Link to cgv">CGV</a> -
+          <a href="#" alt="Politique de confidentialité">Politique de confidentialité</a>
         </p>
       </div>
     </footer>

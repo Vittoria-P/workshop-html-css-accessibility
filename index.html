@@ -9,12 +9,17 @@
       src="https://kit.fontawesome.com/d74732e987.js"
       crossorigin="anonymous"
     ></script>
-    <title>MovieRent</title>
+    <title>MovieRentApp</title>
   </head>
   <body>
     <header>
       <div class="banner">
-        <h1>Movie Rent</h1>
+        <img
+          class="logo"
+          src="../images/LogoMovieRentApp.png"
+          alt="Logo movierent app"
+          
+        />
         <!--Hamburger menu-->
         <nav class="hamburger">
           <ul class="grid">
@@ -25,12 +30,14 @@
           </ul>
         </nav>
       </div>
-      <h2 class="welcome">Welcome</h2>
-      <div class="points">
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-solid fa-circle selected"></i>
-        <i class="fa-solid fa-circle"></i>
+      <div>
+        <h1 class="welcome">Bienvenue sur MovieRent</h1>
+        <div class="points" alt="Carroussel of images">
+          <i class="fa-solid fa-circle" alt="Images one"></i>
+          <i class="fa-solid fa-circle" alt="Images two"></i>
+          <i class="fa-solid fa-circle selected" alt="Images three"></i>
+          <i class="fa-solid fa-circle" alt="Images four"></i>
+        </div>
       </div>
     </header>
     <main>
@@ -41,151 +48,191 @@
       <ul>
         <li>
           <div class="category">
-            <h3>All Movies</h3>
+            <h2>All Movies</h2>
             <i class="fa-solid fa-filter"></i>
-            <a href="./pages/allmovies.html" class="allbutton">See all</a>
+            <a href="./pages/allmovies.html" class="allbutton" alt="Voir tout"
+              >See all</a>
           </div>
-          <ul class="cards">
+
+          <div class="cards">
             <!--Movies list-->
-            <li class="movie">
-              <a href="./pages/singlepage.html">
+            <div class="movie">
+              <a href="./pages/singlepage.html" alt="Voir la description">
                 <p class="available">Available</p>
                 <div class="infos">
-                  <h4 class="title">Movie Title</h4>
+                  <h3 class="title">Movie Title</h3>
                   <p class="genre">Genre</p>
-                  <p class="note">
+                  <div class="note" alt="notation avec etoiles 3/5">
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                  </p>
+                  </div>
                 </div>
               </a>
-            </li>
-            <li class="movie">
-              <a href="./pages/singlepage.html">
+            </div>
+
+            <div class="movie">
+              <a href="./pages/singlepage.html" alt="Voir la description">
                 <p class="available">Available</p>
                 <div class="infos">
-                  <h4 class="title">Movie Title</h4>
+                  <h3 class="title">Movie Title</h3>
                   <p class="genre">Genre</p>
-                  <p class="note">
+                  <div class="note" alt="notation avec etoiles 3/5">
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                  </p>
+                  </div>
                 </div>
               </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <div class="category">
-            <h3>All Series</h3>
-            <i class="fa-solid fa-filter"></i>
-            <a href="./pages/allseries.html" class="allbutton">See all</a>
+            </div>
           </div>
-          <ul class="cards">
+        </section>
+
+        <section>
+          <div class="category">
+            <h2>All Series</h2>
+            <i class="fa-solid fa-filter"></i>
+            <a href="./pages/allseries.html" class="allbutton" alt="Voir tout"
+              >See all</a
+            >
+          </div>
+          <div class="cards">
             <!--Series list-->
-            <li class="movie">
-              <a href="./pages/singlepage.html">
+            <div class="movie">
+              <a href="./pages/singlepage.html" alt="Voir la description">
                 <p class="available">Available</p>
                 <div class="infos">
-                  <h4 class="title">Serie Title</h4>
+                  <h3 class="title">Serie Title</h3>
                   <p class="genre">Genre</p>
-                  <p class="note">
+                  <div class="note" alt="notation avec etoiles 3/5">
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                  </p>
+                  </div>
                 </div>
               </a>
-            </li>
-            <li class="movie">
-              <a href="./pages/singlepage.html">
+            </div>
+            <div class="movie">
+              <a href="./pages/singlepage.html" alt="Voir la description">
                 <p class="available">Available</p>
                 <div class="infos">
-                  <h4 class="title">Serie Title</h4>
+                  <h3 class="title">Serie Title</h3>
                   <p class="genre">Genre</p>
-                  <p class="note">
+                  <div class="note" alt="notation avec etoiles 3/5">
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                  </p>
+                  </div>
                 </div>
               </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <div class="category">
-            <h3>Best Renter</h3>
-            <i class="fa-solid fa-filter"></i>
+            </div>
           </div>
-          <ul class="cards">
+        </section>
+
+        <section>
+          <div class="category">
+            <h2>Best Renter</h2>
+            <i class="fa-solid fa-filter"></i>
+            <a href="./pages/allseries.html" class="allbutton" alt="Voir tout"
+              >See all</a
+            >
+          </div>
+          <div class="cards">
             <!--Mix of movies and series-->
-            <li class="movie">
-              <a href="./pages/singlepage.html">
+            <div class="movie">
+              <a href="./pages/singlepage.html" alt="Voir la description">
                 <p class="available">Available</p>
                 <div class="infos">
-                  <h4 class="title">Serie Title</h4>
+                  <h3 class="title">Serie Title</h3>
                   <p class="genre">Genre</p>
-                  <p class="note">
+                  <div class="note" alt="notation avec etoiles 3/5">
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
-                  </p>
+                  </div>
                 </div>
               </a>
-            </li>
-            <li class="movie">
-              <a href="./pages/singlepage.html">
+            </div>
+            <div class="movie">
+              <a href="./pages/singlepage.html" alt="Voir la description">
                 <p class="available">Available</p>
                 <div class="infos">
-                  <h4 class="title">Movie Title</h4>
+                  <h3 class="title">Movie Title</h3>
                   <p class="genre">Genre</p>
-                  <p class="note">
+                  <div class="note" alt="notation avec etoiles 3/5">
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
                     <i class="fa-solid fa-star selected"></i>
-                  </p>
+                  </div>
                 </div>
               </a>
-            </li>
-          </ul>
-        </li>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+        </section>
+      </article>
+      <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li>...</li>
+        <li><a href="#">10</a></li>
       </ul>
-      <!--RAJOUTER PAGINATION-->
     </main>
     <footer>
-      <div class="banner">
-        <h1>MovieRent</h1>
-        <ul class="grid">
-          <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-        </ul>
+      <div class="footer">
+        <img
+          src="/images/LogoMovieRentApp.png"
+          alt="Logo MovieRent"
+          class="logo"
+        />
+        <div>
+          <ul class="grid">
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                aria-label="Lien vers la page instagram"
+                ><i class="fa-brands fa-instagram" alt="icone instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                aria-label="Lien vers la page facebook"
+                ><i class="fa-brands fa-facebook" alt="icone facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.twitter.com/"
+                aria-label="Lien vers la page twitter"
+                ><i class="fa-brands fa-twitter" alt="icone twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="center">
+      <div class="copyright">
         <p>
-          © 2023 MovieRent - <a href="#">Mentions légales</a> -
-          <a href="#">CGV</a> - <a href="#"> Politique de confidentialité</a>
+          © 2023 MovieRent -
+          <a href="#" alt="Mentions légales">Mentions légales</a> -
+          <a href="#" alt="Link to cgv">CGV</a> -
+          <a href="#" alt="Politique de confidentialité"
+            >Politique de confidentialité</a>
         </p>
       </div>
     </footer>

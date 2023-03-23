@@ -4,12 +4,14 @@ body {
   margin: auto;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #ece8ef;
 }
 
 ul {
   list-style-type: none;
 }
-h1,
+
 .hamburger,
 .banner a {
   font-size: 1em;
@@ -17,19 +19,24 @@ h1,
   align-items: center;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
 a {
-  color: black;
+  color: #ece8ef;
   text-decoration: none;
 }
-a:visited {
+/* a:visited {
   color: black;
-}
+} */
 a:hover {
   font-style: italic;
 }
 
-h3 {
+h2 {
   text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 hr {
@@ -37,10 +44,16 @@ hr {
 }
 
 /* HEADER */
+
+.logo {
+  height: 35px;
+  border-radius: 15px;
+}
 header {
-  height: 20em;
-  background-color: rgb(220, 220, 220);
+  height: 18em;
   padding: 1.5em;
+  background-image: linear-gradient(180deg, rgba(18,18,18,1) 0%, rgba(122,130,118,0.34217436974789917) 60%, rgba(18,18,18,1) 100%), url(/images/Midsommar.jpg);
+  background-size: cover;
 }
 nav.hamburger a {
   margin-left: 0.75em;
@@ -74,52 +87,80 @@ nav.hamburger a {
   text-decoration: none;
 }
 
+.fa-bars {
+  padding-left: 10px;
+}
+
 /* Single page */
+.ficheinfo{
+  margin: 20px;
+}
+.cards-singlepage {
+  display: flex;
+  flex-direction: row;
+}
+.movie-singlepage {
+  background-image: radial-gradient(circle, rgba(131,127,127,0.5858718487394958) 0%, rgba(73,73,73,1) 65%), url(./images/Interstellar.jpg);
+  background-size: cover;
+  border-radius: 30px 30px 30px 30px;
+  margin: 0.5em;
+  width: 100%;
+  padding: 0.8em;
+}
+.space{
+  margin-top: 10px;
+}
 .fa-clock {
-  background-color: rgb(220, 220, 220);
+  color: #c89002;
   margin-right: 0.25em;
 }
 
-.fa-check {
-  background-color: white;
-  padding: 0.25em;
-  font-size: 20px;
-  margin-right: 2.5em;
-  color: rgb(220, 220, 220);
-  border-radius: 50%;
+.fa-circle-user {
+  padding: 1em;
+  color: #c89002;
 }
 
-/* IDK */
-/* .center {
-  display: flex;
-  justify-content: center;
-} */
-.welcome,
 .titlepage {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-size: 3em;
-  padding-right: 1em;
+  font-size: 2.5em;
   letter-spacing: 0.1em;
-}
-.welcome {
-  padding-top: 1em;
 }
 
 /* CATEGORIE */
 .category {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.category_cards {
+  display: flex;
+  align-items: center;
+}
+.fa-filter {
+  margin-left: 10px;
 }
 
 /* CARDS */
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
-.space {
-  margin-left: 0.75em;
+.movie {
+  background-image: radial-gradient(circle, rgba(131,127,127,0.5858718487394958) 0%, rgba(73,73,73,1) 65%), url(./images/BlackSwan.jpg);
+  background-size: cover;
+  border-radius: 30px 30px 30px 30px;
+  margin: 0.5em;
+  width: 100%;
+  padding: 1em;
 }
 
 .available {
@@ -146,14 +187,7 @@ nav.hamburger a {
   font-size: 14px;
   color: grey;
 }
-.movie {
-  background-color: rgb(220, 220, 220);
-  border-radius: 30px 30px 30px 30px;
-  margin-right: 1em;
-  width: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
-}
+
 .moviewhite {
   background-color: white;
   border-radius: 30px 30px 30px 30px;
@@ -163,19 +197,23 @@ nav.hamburger a {
   padding-right: 1em;
 }
 .moviesgrid {
-  background-color: rgb(220, 220, 220);
+  background-image: radial-gradient(circle, rgba(131,127,127,0.5858718487394958) 0%, rgba(73,73,73,1) 65%), url(./images/Joker.jpg);
+  background-size: cover;
   border-radius: 30px 30px 30px 30px;
-  margin-right: 1em;
   padding-left: 1em;
   padding-right: 1em;
+  padding-bottom: 1em;
 }
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
-  padding-left: 0px;
+
+.seriesgrid {
+  background-image: radial-gradient(circle, rgba(131,127,127,0.5858718487394958) 0%, rgba(73,73,73,1) 65%), url(./images/Gambit.jpg);
+  background-size: cover;
+  border-radius: 30px 30px 30px 30px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
 }
+
 .cardsgrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -197,21 +235,27 @@ nav.hamburger a {
   color: white;
 }
 .search {
-  width: 75%;
+  width: 80%;
   border-radius: 30px 0px 0px 30px;
   background-color: rgb(220, 220, 220);
   border-color: transparent;
-  height: 45px;
+  height: 39px;
 }
 .searchbar {
-  margin-top: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
+.btn-search {
+  border: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
 .fa-magnifying-glass {
-  background-color: rgb(169, 169, 169);
+  background-color: #c89002;
   border-radius: 0px 30px 30px 0px;
   height: 45px;
   width: 2em;
@@ -221,44 +265,65 @@ nav.hamburger a {
   padding-left: 0.5em;
 }
 
+.container {
+  margin: 20px;
+  margin-bottom: 60px;
+}
+
 .selected {
   color: black;
 }
 
 .allbutton {
-  background-color: rgb(220, 220, 220);
+  background-color: #c89002;
+  color: #121212;
+  font-weight: bold;
   border-radius: 30px 30px 30px 30px;
   padding: 0.5em 1em 0.5em 1em;
   margin-left: 5em;
   font-size: 12px;
 }
 .tagbutton {
-  background-color: white;
+  background-color: #c89002;
+  color: #121212;
+  font-weight: bold;
+  width: 35px;
   border-radius: 30px 30px 30px 30px;
-  padding: 0.1em 0.75em 0.1em 0.75em;
+  padding: 0.5em 1em 0.5em 1em;
   margin-right: 1em;
   font-size: 12px;
+  text-align: center;
 }
 .taglist {
   padding-left: 0em;
 }
 .rentbutton {
-  background-color: black;
-  color: rgb(220, 220, 220);
-  margin-left: 75%;
-  margin-top: 50%;
-  text-transform: uppercase;
+  background-color: #c89002;
+  border: 1px solid #c89002;
   border-radius: 30px 30px 30px 30px;
-  padding: 0.5em 1em 0.5em 1em;
+  color: #121212;
   font-size: 16px;
-  margin-bottom: 10%;
+  margin-left: 75%;
+  margin-top: 35%;
+  margin-bottom: 25%;
+  text-transform: uppercase;
+  padding: 0.5em 1em 0.5em 1em;
 }
+
 .category .fa-solid {
   margin-left: 1em;
 }
+.fa-filter, .fa-star.selected{
+  color: #c89002;
+}
+.fa-star{
+  color: #ece8ef;
+}
+
 .singlemovietitle {
   text-transform: capitalize;
   margin-top: -0.25em;
+  margin-bottom: 0px;
   font-size: 25px;
 }
 .director {
@@ -270,15 +335,13 @@ nav.hamburger a {
   font-style: italic;
   margin-right: 1em;
 }
-.resume {
-  font-style: italic;
-}
 
-.actors li {
+.actors{
   border: solid;
   border-color: black;
   border-width: 1px;
   padding: 0.5em;
+  padding-left: 0px;
   border-radius: 50%;
   height: 1em;
   width: 1em;
@@ -287,25 +350,48 @@ nav.hamburger a {
   justify-content: center;
   margin-right: 0.5em;
 }
-.actors {
-  padding-left: 0px;
-}
 
 /* FOOTER */
-footer .center {
-  font-size: 12px;
-  text-align: center;
-}
-footer .banner {
-  background-color: rgb(220, 220, 220);
+
+.footer {
+  background-color: #121212;
   border-radius: 30px 30px 0px 0px;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  box-shadow: 0px -10px 10px 0px rgba(200,144,2,1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
 }
 footer .fa-brands {
-  color: white;
-  background-color: black;
+  color: #121212;
+  background-color: #c89002;
   padding: 0.25em;
   border-radius: 50%;
   margin-left: 1em;
+}
+.copyright {
+  font-size: 12px;
+  text-align: center;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: -2.5em;
+  padding-left: 0px;
+  margin-bottom: 2em;
+}
+.pagination li{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: solid;
+  border-color: rgba(200,144,2,1);
+  border-width: 1px;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
