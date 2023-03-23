@@ -27,9 +27,6 @@ a {
   color: #ece8ef;
   text-decoration: none;
 }
-/* a:visited {
-  color: black;
-} */
 a:hover {
   font-style: italic;
 }
@@ -38,7 +35,6 @@ h2 {
   text-transform: uppercase;
   font-size: 1.2em;
   margin-right:20px;
-  margin-left: 10px;
 }
 
 hr {
@@ -134,14 +130,16 @@ nav.hamburger a {
 .category {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 30px;
 }
-.category_cards {
+.titlefilter {
   display: flex;
   align-items: center;
 }
-.fa-filter {
+.fa-caret-down{
   margin-left: 10px;
+  color: #c89002;
 }
 
 /* swipe */
@@ -267,6 +265,9 @@ nav.hamburger a {
   border: 0px;
   padding: 0px;
   background-color: transparent;
+}
+input{
+  padding-left: 10px;
 }
 .fa-magnifying-glass {
   background-color: #c89002;
