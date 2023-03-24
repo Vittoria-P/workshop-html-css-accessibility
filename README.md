@@ -1,29 +1,29 @@
 ## L'atelier éco-accessible
 
-### Quoi ?
+### Qu'est ce donc ?
 
 Dans le cadre de notre formation à Becode, nous devons réaliser un workshop de deux heures à propos d'une tech ou d'un thème relié au code. Avec plusieurs collègues, nous avons décider de créer un gros projet : une web app **MovieRent App**. Ce projet est divisé en thèmes :
 
-- Création du design sur Figma par [Lisa](https://github.com/lilouMazzarisi) [Readme](https://github.com/lilouMazzarisi/Workshop_Intro-to-figma).
+- Création du design sur Figma par [Lisa](https://github.com/lilouMazzarisi) -> [Readme](https://github.com/lilouMazzarisi/Workshop_Intro-to-figma).
 - Création du Html & Css par nous.
-- Amélioration dynamique avec VueJs par [Tanguy](https://github.com/TanguyC0) et [Aurélie](https://github.com/Elhya13) [Readme](https://github.com/TanguyC0/workshop-Vue.js).
-- Ajout de Laravel et de l'Api par [Sacha](https://github.com/sachajeunejean) et [Valentin](https://github.com/GeorisVal) [Readme](https://github.com/GeorisVal/workshop-api-laravel).
-- Le plan marketing par [Olivia](https://github.com/OliviaDemaret) [Readme]().
+- Amélioration dynamique avec VueJs par [Tanguy](https://github.com/TanguyC0) et [Aurélie](https://github.com/Elhya13) -> [Readme](https://github.com/TanguyC0/workshop-Vue.js).
+- Ajout de Laravel et de l'Api par [Sacha](https://github.com/sachajeunejean) et [Valentin](https://github.com/GeorisVal) -> [Readme](https://github.com/GeorisVal/workshop-api-laravel).
+- Le plan marketing par [Olivia](https://github.com/OliviaDemaret) -> [Readme]().
 
-### Pourquoi ?
+### Pourquoi ces options ?
 
 Nous attachons une grande importance à l'accessibilité et à l'éco-responsabilité de nos projets.
 Ce sont des sujets qui sont de plus en plus discutés dans le monde du web et auxquels nous devrons à terme penser d'office car les législations évoluent. Il est donc impératif de s’en inquiéter dés maintenant.
 
 C’est pour cela que nous les avons intégrer à notre html & css pour montrer les bases à nos collègues.
 
-### Qui ?
+### Qui sommes nous ?
 
 - [Vitto](https://github.com/Vittoria-P)
 - [Jade](https://github.com/TreshMiralissa)
 - [Lauranne](https://github.com/l4ur4nn3)
 
-### Techno & législation
+### Technos
 
 Pour ce workshop, nous avons uniquement tranvailler avec :
 
