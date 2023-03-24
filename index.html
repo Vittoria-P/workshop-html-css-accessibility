@@ -16,32 +16,61 @@
       <div class="banner">
         <img
           class="logo"
-          src="../images/LogoMovieRentApp.png"/>
+          src="./images/LogoMovieRentApp.png"
+          alt="logo MovieRentApp"/>
+          
         <!--Hamburger menu-->
-        <nav class="hamburger">
+        <!-- <nav class="hamburger">
           <ul class="grid">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./pages/allmovies.html">Movies</a></li>
             <li><a href="./pages/allseries.html">Series</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-        </nav>
+        </nav> -->
+
+        <div class="aria-navbar">
+          <button class="btn-menu-toggle" aria-controls="menu" aria-haspopup="true" aria-expanded="false" aria-label="menu déroulant">Menu<i class="fa-solid fa-bars" alt="icone du menu"></i></button>
+          <nav class="aria-nav" id="menu">
+            <ul>
+              <li><a href="./index.html" tabindex="0" alt="lien vers la page principale">Home</a></li>
+              <li><a href="./pages/allmovies.html" tabindex="-1">Movies</a></li>
+              <li><a href="./pages/allseries.html" tabindex="-1">Series</a></li>
+              <li><a href="#" tabindex="-1">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
       <h1 class="welcome">Bienvenue sur MovieRent</h1>
     </header>
     <main>
+      <!--  
       <div class="center searchbar">
         <input type="search" class="search" />
         <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      -->
+      <div class="center searchbar">
+        <form class="center searchbar" role="search" action="/" method="get">
+          <input type="text" class="search" placeholder="Recherche..." />
+          <button type="submit" class="btn-search" aria-label="recherche">
+            <i
+              class="fa-solid fa-magnifying-glass"
+              visually-hidden
+              alt="icone recherche"
+            ></i>
+          </button>
+        </form>
       </div>
         <section>
           <div class="category">
             <h2>All Movies</h2>
             <a href="./pages/allmovies.html" class="allbutton">See all</a>
           </div>
-          <div class="cards slides">
+          <div class="cards slides" aria-label="carrousel 5 slides">
               <!--Movies list-->
-              <div class="movie slides-item">
+              <div class="movie slides-item" aria-label="slide 1 sur 5">
                 <a href="./pages/singlepage.html">
                   <p class="available">Available</p>
                   <div class="infos">
@@ -57,7 +86,7 @@
                   </div>
                 </a>
               </div>
-              <div class="movie slides-item">
+              <div class="movie slides-item" aria-label="slide 2 sur 5">
                 <a href="./pages/singlepage.html">
                   <p class="available">Available</p>
                   <div class="infos">
@@ -73,7 +102,7 @@
                   </div>
                 </a>
               </div>
-              <div class="movie slides-item">
+              <div class="movie slides-item" aria-label="slide 3 sur 5">
                 <a href="./pages/singlepage.html">
                   <p class="available">Available</p>
                   <div class="infos">
@@ -89,13 +118,13 @@
                   </div>
                 </a>
               </div>
-              <div class="movie slides-item">
+              <div class="movie slides-item" aria-label="slide 4 sur 5">
                 <a href="./pages/singlepage.html">
                   <p class="available">Available</p>
                   <div class="infos">
                     <h3 class="title">Movie Title</h3>
                     <p class="genre">Genre</p>
-                    <div class="note">
+                    <div class="note" aria-label="notation sur 5 étoiles">
                       <i class="fa-solid fa-star selected"></i>
                       <i class="fa-solid fa-star selected"></i>
                       <i class="fa-solid fa-star selected"></i>
@@ -105,7 +134,7 @@
                   </div>
                 </a>
               </div>
-              <div class="movie slides-item">
+              <div class="movie slides-item" aria-label="slide 5 sur 5">
                 <a href="./pages/singlepage.html">
                   <p class="available">Available</p>
                   <div class="infos">
