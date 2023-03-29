@@ -46,3 +46,4 @@ Pour cela, il doivent fork le projet en entier
 ### Sources
 
 Nous allons présenter les slides sur un [Canva](https://www.canva.com/design/DAFd0HD3x28/QUDA8CYm9itNVrHnFwFFSA/view?utm_content=DAFd0HD3x28&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink). Dedans, il ya toute notre présentation et à la fin nous y avons mis nos sources.
+# workshop-vue
